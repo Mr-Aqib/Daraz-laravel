@@ -11,7 +11,7 @@
     <title>Daraz</title>
 </head>
 
-<body>
+<body style="background-color: #eaeaea">
 
     {{ $slot }}
 
