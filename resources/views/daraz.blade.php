@@ -1,5 +1,5 @@
 <x-layout>
-
+    {{-- Navbar --}}
     <div class="container-fluid text-white" style="background-color: #F85606">
         <div class="container d-flex flex-column  p-2 ">
             <div class="d-flex row flex-row navupper justify-content-between ">
@@ -54,6 +54,7 @@
             </div>
         </div>
     </div>
+    {{-- Slider --}}
     <div class="container my-2 ">
         <div class="row d-flex flex-row">
             <div class="col-lg-2 p-2 px-3 bg-white rounded-4">
@@ -101,5 +102,39 @@
                 </div>
             </div>
         </div>
+    </div>
+    {{-- Daraz Verified --}}
+    <div class="rounded-3 p-3 container my-3 d-flex flex-row align-items-center justify-content-between"
+        style="background-color: #FFF1EB">
+        <div class="d-flex flex-row gap-1 align-items-center justify-content-center">
+            <i class="bi bi-patch-check-fill" style="color:#F85606"></i>
+            <p class="m-0 p-0" style="font-size: 16px">Safe Payments</p>
+        </div>
+        <h6>|</h6>
+        <div class="d-flex flex-row gap-1 align-items-center justify-content-center">
+            <i class="bi bi-patch-check-fill" style="color:#F85606"></i>
+            <p class="m-0 p-0" style="font-size: 16px">Natonwide Delivery</p>
+        </div>
+        <h6>|</h6>
+        <div class="d-flex flex-row gap-1 align-items-center justify-content-center">
+            <i class="bi bi-patch-check-fill" style="color:#F85606"></i>
+            <p class="m-0 p-0" style="font-size: 16px">Free & Easy Returns</p>
+        </div>
+        <h6>|</h6>
+        <div class="d-flex flex-row gap-1 align-items-center justify-content-center">
+            <i class="bi bi-patch-check-fill" style="color:#F85606"></i>
+            <p class="m-0 p-0" style="font-size: 16px">Best Price Guranted</p>
+        </div>
+        <h6>|</h6>
+        <div class="d-flex flex-row gap-1 align-items-center justify-content-center">
+            <i class="bi bi-patch-check-fill" style="color:#F85606"></i>
+            <p class="m-0 p-0" style="font-size: 16px">100% Autehntic Products</p>
+        </div>
+        <h6>|</h6>
+        <div class="d-flex flex-row gap-1 align-items-center justify-content-center">
+            <i class="bi bi-patch-check-fill" style="color:#F85606"></i>
+            <p class="m-0 p-0" style="font-size: 16px">Daraz Verified</p>
+        </div>
+
     </div>
 </x-layout>
