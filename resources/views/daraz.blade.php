@@ -137,4 +137,9 @@
         </div>
 
     </div>
+    {{-- Image 4th div --}}
+    <div class="container d-flex flex-column
+    ">
+
+    </div>
 </x-layout>
