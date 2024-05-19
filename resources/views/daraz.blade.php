@@ -12,8 +12,8 @@
                     </ul>
                 </div>
                 <div class="col-lg-2">
-                    <button class="gap-2 align-items-center d-flex flex-row border-0"
-                        style="background-color: transparent">
+                    <button class="gap-2 align-items-center d-flex flex-row border-0 p-1 rounded-2"
+                        style="background-color:rgba(93, 91, 91, 0.8)">
                         <img width="20px" src="{{ URL::to('/assets/images/daraz.png') }}" alt="">
                         <p class=" m-0 p-0 text-white">Save more on App</p>
 
@@ -131,15 +131,129 @@
             <p class="m-0 p-0" style="font-size: 16px">100% Autehntic Products</p>
         </div>
         <h6>|</h6>
-        <div class="d-flex flex-row gap-1 align-items-center justify-content-center">
-            <i class="bi bi-patch-check-fill" style="color:#F85606"></i>
-            <p class="m-0 p-0" style="font-size: 16px">Daraz Verified</p>
-        </div>
+
 
     </div>
     {{-- Image 4th div --}}
-    <div class="container d-flex flex-column
+    <div class="container  d-flex gap-1 flex-column
     ">
+        <p class="m-0 p-0 mx-3" style="font-size: 20px">Catergories</p>
+        <div class="d-flex  flex-row container align-items-center justify-content-center row ">
+            <div class="col-lg-3 d-flex flex-row gap-1">
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item1.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
 
+                </div>
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item2.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3  d-flex flex-row gap-1">
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item3.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item4.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex flex-row gap-1">
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item3.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item4.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex flex-row gap-1">
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item3.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item4.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="d-flex  flex-row container aling-items-center row ">
+            <div class="col-lg-3 d-flex flex-row gap-1">
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item1.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item2.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex flex-row gap-1">
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item3.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item4.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex flex-row gap-1">
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item3.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item4.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex flex-row gap-1">
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item3.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+                <div class="py- px-5 d-flex bg-white flex-column align-items-center justify-content-center">
+                    <img width="70px" src="{{ URL::to('./assets/images/item4.jpg') }}" alt="">
+                    <p class="m-0 p-0">Wardrobe</p>
+                    <p class="m-0 p-0">Organizer</p>
+
+                </div>
+            </div>
+        </div>
     </div>
+
 </x-layout>
