@@ -104,7 +104,7 @@
         </div>
     </div>
     {{-- Daraz Verified --}}
-    <div class="rounded-3 p-3 container my-3 d-flex flex-row align-items-center justify-content-between"
+    <div class="rounded-3 p-2 container my-3 d-flex flex-row align-items-center justify-content-around"
         style="background-color: #FFF1EB">
         <div class="d-flex flex-row gap-1 align-items-center justify-content-center">
             <i class="bi bi-patch-check-fill" style="color:#F85606"></i>
@@ -125,12 +125,7 @@
             <i class="bi bi-patch-check-fill" style="color:#F85606"></i>
             <p class="m-0 p-0" style="font-size: 16px">Best Price Guranted</p>
         </div>
-        <h6>|</h6>
-        <div class="d-flex flex-row gap-1 align-items-center justify-content-center">
-            <i class="bi bi-patch-check-fill" style="color:#F85606"></i>
-            <p class="m-0 p-0" style="font-size: 16px">100% Autehntic Products</p>
-        </div>
-        <h6>|</h6>
+        s
 
 
     </div>
@@ -156,7 +151,7 @@
 
 
             </div>
-            <div class="col-lg-4 col-6 align-items-center justify-content-between  d-flex flex-row gap-1">
+            <div class="col-lg-4  align-items-center justify-content-between  d-flex flex-row gap-1">
                 <div class=" px-4 py-2 align-items-center justify-content-center bg-white d-flex flex-column">
                     <img width="100px" src="{{ URL::to('./assets/images/item1.jpg') }}" alt="">
                     <p class="m-0 p-0">Moisturizers</p>
@@ -172,7 +167,7 @@
 
 
             </div>
-            <div class="col-lg-3 col-6 align-items-center justify-content-between  d-flex flex-row gap-1">
+            <div class="col-lg-3  align-items-center justify-content-between  d-flex flex-row gap-1">
                 <div class=" px-4 py-2 align-items-center justify-content-center bg-white d-flex flex-column">
                     <img width="100px" src="{{ URL::to('./assets/images/item1.jpg') }}" alt="">
                     <p class="m-0 p-0">Moisturizers</p>
