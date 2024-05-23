@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\categorycontroller;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -9,3 +10,5 @@ Route::get('/', function () {
 Route::view('/seller-dashboard', '.pages.seller.seller-board');
 // Add categories
 Route::view('/add-categories', '.pages.seller.add-cate');
+// Form-adding ctaegory
+Route::post('/adding-category', [categorycontroller::class, 'addCategories']);
