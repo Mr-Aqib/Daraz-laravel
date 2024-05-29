@@ -1,3 +1,4 @@
+<x-flash></x-flash>
 <x-seller-component>
     <div class="container col-lg-5">
         <h1 class="text-center">Add categories</h1>

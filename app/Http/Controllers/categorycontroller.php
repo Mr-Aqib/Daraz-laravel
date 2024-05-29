@@ -15,5 +15,12 @@ class categorycontroller extends Controller
         ]);
         $formdata['image'] = $req->file('image')->store('category_images', 'public');
         category::create($formdata);
+        return back()->with('message', 'Category Uploaded Sucessfully');
+    }
+    public function getCategories()
+    {
+        $getcategory = category::all();
+        // Where to show data
+        return view('daraz', compact('getcategory'));
     }
 }

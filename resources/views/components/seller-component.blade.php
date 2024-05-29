@@ -15,7 +15,9 @@
             <div class="row mx-auto rounded-3">
                 <div class="col-lg-2 shadow rounded-3 bg-dark d-flex flex-column gap-2 justify-content-around  align-items-center "
                     style="height: 90vh">
-                    <img width="100px" src="{{ URL::to('./assets/images/daraz2.png') }}" alt="">
+
+                    <a href="/" style="text-decoration: none"><img width="100px"
+                            src="{{ URL::to('./assets/images/daraz2.png') }}" alt=""></a>
                     <ul class="gap-3 d-flex flex-column fs-5 text-white list-unstyled  ">
                         <a href="/seller-dashboard" class=" text-white" style="text-decoration: none">
                             <li class="list rounded-3 d-flex gap-1 align-items-center rounded-3 px-3 active"

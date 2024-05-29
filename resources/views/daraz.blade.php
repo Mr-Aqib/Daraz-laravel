@@ -135,11 +135,14 @@
     <div class="container d-flex flex-column">
         <p>Categories</p>
         <div class="d-flex " style="flex-wrap: wrap">
-            <div class="card p-2 px-3 align-items-center justify-content-center">
-                <img width="100px" src="{{ URL::to('./assets/images/item1.jpg') }}" alt="">
-                <p>Description</p>
-            </div>
-
+            @foreach ($getcategory as $item)
+                <div class="card p-2 px-3 align-items-center justify-content-center">
+                    <img width="100px" src="{{ asset('storage/' . $item->image) }}" alt=""
+                        style="object-fit:cover">
+                    <p>Description</p>
+                </div>
+            @endforeach
         </div>
+
     </div>
 </x-layout>
