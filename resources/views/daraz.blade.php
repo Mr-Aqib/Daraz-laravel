@@ -9,6 +9,9 @@
                         <li>Daraz Affiliate Program</li>
                         <li>Help & Support</li>
                         <li>Daraz Logistics</li>
+                        <a href="/seller-dashboard" style="text-decoration: none ;color:#FFF1EB">
+                            <li>Seller Board</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="col-lg-2">
@@ -16,7 +19,6 @@
                         style="background-color:rgba(93, 91, 91, 0.8)">
                         <img width="20px" src="{{ URL::to('/assets/images/daraz.png') }}" alt="">
                         <p class=" m-0 p-0 text-white">Save more on App</p>
-
                     </button>
                 </div>
             </div>
