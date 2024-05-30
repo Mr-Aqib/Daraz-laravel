@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\category;
+use App\Models\Products;
 use Illuminate\Http\Request;
 
 class categorycontroller extends Controller
@@ -20,7 +21,9 @@ class categorycontroller extends Controller
     public function getCategories()
     {
         $getcategory = category::all();
+        $getproducts = Products::all();
         // Where to show data
-        return view('daraz', compact('getcategory'));
+
+        return view('daraz', compact('getcategory', 'getproducts'));
     }
 }

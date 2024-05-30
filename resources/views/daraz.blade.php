@@ -143,6 +143,26 @@
                 </div>
             @endforeach
         </div>
+    </div>
+    <div class="container d-flex flex-column">
+        <h4>Products</h4>
+        <div class="d-flex " style="flex-wrap: wrap">
+            @foreach ($getproducts as $item)
+                <a style="text-decoration: none" href="/single-product/{{ $item->id }}"
+                    class="card p-2 px-3 align-items-center justify-content-center">
+                    <img width="100px" height="200px" src="{{ asset('storage/' . $item->image) }}"
+                        alt="Product Images" style="object-fit:cover">
+                    <p class="m-0 p-0">{{ $item->productname }}</p>
+                    <div class="d-flex flex-row gap-3 align-items-start justify-content-start">
+                        <p class="m-0 p-0">Rs .{{ $item->price }}</p>
+                        <strike style="color:#F85606">Rs. {{ $item->oldprice }}</strike>
 
+                    </div>
+
+
+
+                </a>
+            @endforeach
+        </div>
     </div>
 </x-layout>

@@ -21,4 +21,10 @@ class productcontrolller extends Controller
         Products::create($formdata_produc);
         return back()->with('message', 'Product Added Successfully');
     }
+
+    public function findproduct($id)
+    {
+        $productfind = Products::find($id);
+        return view('pages.user.single-product', compact('productfind'));
+    }
 }

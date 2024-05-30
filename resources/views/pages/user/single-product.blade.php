@@ -5,22 +5,17 @@
     <div class="container col-lg-10 p-4 bg-white my-4">
         <div class="row">
             <div class="col-lg-3">
-                <img width="300px"
-                    src="https://static-01.daraz.pk/p/f1e807670f4b48d351503533223a2552.jpg_400x400q75-product.jpg_.webp"
-                    alt="">
+                <img width="300px" src="{{ asset('storage/' . $productfind->image) }}" alt="">
             </div>
             <div class="col-lg-6">
                 <div class="d-flex flex-column gap-2">
-                    <h4>Insecticide Refill Coil stand, Metal stand Rack Hook for Room Décor Wall Mounted and Coil
-                        Stand,Nordic iron insect mosquito coil holder retro innovative home incense mosquito repellent
-                        ,Nordic Spiral Mosquito Coil Holder Iron Art Mosquito Coil Frame</h4>
+                    <h4>{{ $productfind->description }}</h4>
                     <hr>
-                    <div class="d-flex flex-row">
-                        <p>RS :</p>
-                        <p>RS :</p>
+                    <div class="d-flex flex-column">
+                        Rs. {{ $productfind->price }}
                     </div>
                     <div class="d-flex flex-row gap-3">
-                        <strike>RS. 300</strike>
+                        <strike>{{ $productfind->oldprice }}</strike>
                         <p>80%</p>
                     </div>
                     <hr>
@@ -59,6 +54,7 @@
                 </div>
             </div>
         </div>
+
     </div>
     <script>
         let btnplus = document.querySelector('.plus')
