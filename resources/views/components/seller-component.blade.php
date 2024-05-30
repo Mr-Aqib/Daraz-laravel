@@ -28,8 +28,11 @@
                             <li class="list rounded-3 px-3  d-flex gap-1 align-items-center rounded-3"
                                 style="width:max-content"><i class="bi bi-moon-stars-fill"></i>Add Categoreis</li>
                         </a>
-                        <li class="list rounded-3 px-3"style="width:max-content"><i
-                                class="bi bi-moon-stars-fill"></i>Add Products</li>
+                        <a href="/add-product" class=" text-white" style="text-decoration: none">
+                            <li class="list rounded-3 px-3  d-flex gap-1 align-items-center rounded-3"
+                                style="width:max-content"><i class="bi bi-moon-stars-fill"></i>Add Product</li>
+                        </a>
+
                         <li class="list rounded-3 px-3"style="width:max-content"><i
                                 class="bi bi-moon-stars-fill"></i>View Products</li>
                         <li class="list rounded-3 px-3"style="width:max-content"><i

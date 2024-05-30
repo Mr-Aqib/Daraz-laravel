@@ -2,7 +2,7 @@
     <x-navbar>
     </x-navbar>
 
-    <div class="container col-lg-10 p-4 bg-white">
+    <div class="container col-lg-10 p-4 bg-white my-4">
         <div class="row">
             <div class="col-lg-3">
                 <img width="300px"
@@ -10,7 +10,7 @@
                     alt="">
             </div>
             <div class="col-lg-6">
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column gap-2">
                     <h4>Insecticide Refill Coil stand, Metal stand Rack Hook for Room Décor Wall Mounted and Coil
                         Stand,Nordic iron insect mosquito coil holder retro innovative home incense mosquito repellent
                         ,Nordic Spiral Mosquito Coil Holder Iron Art Mosquito Coil Frame</h4>
@@ -36,6 +36,11 @@
                                 +
                             </button>
                         </div>
+
+                    </div>
+                    <div class="d-flex flex-row justify-content-center gap-3 my-3">
+                        <button class="btn btn-danger w-25">Add to cart</button>
+                        <button class="btn btn-success w-25">Button</button>
                     </div>
                 </div>
             </div>
@@ -44,6 +49,12 @@
                     <div class="d-flex flex-row gap-2">
                         <i class="bi bi-geo-alt"></i>
                         <p class="p-0 m-0">Sindh, Karachi - Gulshan-e-Iqbal, Block 15</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <div class="d-flex flex-row gap-2">
+                        <i class="bi bi-geo-alt"></i>
+                        <p class="p-0 m-0">Cash on Delivery Available</p>
                     </div>
                 </div>
             </div>

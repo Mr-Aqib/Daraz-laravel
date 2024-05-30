@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\categorycontroller;
+use App\Http\Controllers\productcontrolller;
 use Illuminate\Support\Facades\Route;
 //Main Page
 Route::get('/', function () {
@@ -16,3 +17,6 @@ Route::post('/add-category', [categorycontroller::class, 'addCategories']);
 Route::get('/', [categorycontroller::class, 'getCategories']);
 // Signle Product
 Route::view('/single-product', '.pages.user.single-product');
+//Add Product
+Route::view('/add-product', '.pages.seller.add-product');
+Route::post('/add-product-back', [productcontrolller::class, 'addproduct']);
