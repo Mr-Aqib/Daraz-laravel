@@ -14,3 +14,5 @@ Route::view('/add-categories', '.pages.seller.add-cate');
 Route::post('/add-category', [categorycontroller::class, 'addCategories']);
 // Getting Data from controller class getcategory
 Route::get('/', [categorycontroller::class, 'getCategories']);
+// Signle Product
+Route::view('/single-product', '.pages.user.single-product');

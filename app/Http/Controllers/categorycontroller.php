@@ -11,7 +11,7 @@ class categorycontroller extends Controller
     {
         $formdata = $req->validate([
             "category" => ['min:3', 'max:40', 'string', 'required'],
-            "image" => ["mimes:png,jpg,jpeg", 'required'],
+            "image" => ['required'],
         ]);
         $formdata['image'] = $req->file('image')->store('category_images', 'public');
         category::create($formdata);

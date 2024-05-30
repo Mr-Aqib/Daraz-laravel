@@ -137,9 +137,9 @@
         <div class="d-flex " style="flex-wrap: wrap">
             @foreach ($getcategory as $item)
                 <div class="card p-2 px-3 align-items-center justify-content-center">
-                    <img width="100px" src="{{ asset('storage/' . $item->image) }}" alt=""
+                    <img width="100px" height="100px" src="{{ asset('storage/' . $item->image) }}" alt=""
                         style="object-fit:cover">
-                    <p>Description</p>
+                    <p>{{ $item->category }}</p>
                 </div>
             @endforeach
         </div>
