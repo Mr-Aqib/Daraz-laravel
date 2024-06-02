@@ -31,17 +31,30 @@
 
               </div>
               <div class="d-flex col-lg-3 gap-2  flex-row col-lg-3 text-white  align-items-center  ">
-                  <button
-                      class=" align-items-center justify-content-center bg-transparent d-flex flex-row border-0 gap-1">
-                      <i class="bi bi-person" style="color:white"></i>
-                      <p class="text-white m-0 p-0">log in</p>
-                  </button>
-                  <h6>|</h6>
-                  <button
-                      class="align-items-center justify-content-center bg-transparent d-flex flex-row border-0 text-white">
-                      Sign Up
-                  </button>
-                  <h6>|</h6>
+                  @guest
+                      <button
+                          class=" align-items-center justify-content-center bg-transparent d-flex flex-row border-0 gap-1">
+                          <i class="bi bi-person" style="color:white"></i>
+                          <p class="text-white m-0 p-0"><a href="/login" class="text-white"
+                                  style="text-decoration: none">log in </a></p>
+                      </button>
+                      <h6>|</h6>
+                      <button
+                          class="align-items-center justify-content-center bg-transparent d-flex flex-row border-0 text-white">
+                          <a href="/register" style="text-decoration: none" class="text-white">
+                              Sign Up
+                          </a>
+                      </button>
+                  @endguest
+                  @auth
+                      <button
+                          class="align-items-center justify-content-center bg-transparent d-flex flex-row border-0 text-white">
+                          <i class="bi bi-person" style="color:white"></i>
+                          Salam {{ auth()->user()->name }}
+                      </button>
+                      <h6>|</h6>
+                  @endauth
+
                   <button
                       class=" align-items-center justify-content-center bg-transparent d-flex flex-row border-0 gap-1">
                       <i class="bi bi-globe" style="color:white"></i>
@@ -50,6 +63,15 @@
 
                   </button>
                   <div class="bi bi-cart" style="font-size: 25px"></div>
+                  @auth
+                      <form action="/logout" method="POST">
+                          @csrf
+                          <button class="btn btn-danger">
+                              <i class="bi text-white bi-power"></i>
+                          </button>
+                      </form>
+                  @endauth
+
               </div>
           </div>
       </div>
